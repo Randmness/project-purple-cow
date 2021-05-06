@@ -11,14 +11,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8090/items",
+					"raw": "http://localhost:3000/item",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8090",
+					"port": "3000",
 					"path": [
-						"items"
+						"item"
 					]
 				}
 			},
@@ -39,14 +39,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8090/items",
+					"raw": "http://localhost:3000/item",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8090",
+					"port": "3000",
 					"path": [
-						"items"
+						"item"
 					]
 				}
 			},
@@ -58,14 +58,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8090/items",
+					"raw": "http://localhost:3000/item",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8090",
+					"port": "3000",
 					"path": [
-						"items"
+						"item"
 					]
 				}
 			},
@@ -89,14 +89,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8090/items/1",
+					"raw": "http://localhost:3000/item/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
-					"port": "8090",
+					"port": "3000",
 					"path": [
-						"items",
+						"item",
 						"1"
 					]
 				}
@@ -110,7 +110,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"name\": \"Lemonawde\"}",
+					"raw": "{\"name\": \"Dr. Pepper\"}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -118,14 +118,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8090/items/1",
+					"raw": "http://localhost:8090/item/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8090",
 					"path": [
-						"items",
+						"item",
 						"1"
 					]
 				}
@@ -147,14 +147,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8090/items/1",
+					"raw": "http://localhost:8090/item/1",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "8090",
 					"path": [
-						"items",
+						"item",
 						"1"
 					]
 				}
