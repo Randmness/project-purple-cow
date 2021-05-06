@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/items")
+@RequestMapping(value = "/item")
 public class ItemController {
 
     private final ItemRepository repository;
