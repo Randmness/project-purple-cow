@@ -28,7 +28,13 @@ These can be changed by updating the default application context or overridden v
    
     `docker run -v ~/:/tmp -p 3000:3000 project-purple-cow`
 
-
+### Endpoints
+- [`GET` Retrieve All Items](docs/RETRIEVE_ALL_ITEMS.md)
+- [`GET` Retrieve Item](docs/RETRIEVE_ITEM.md)
+- [`POST` Insert Items](docs/INSERT_ITEMS.md)
+- [`PUT` Update Item](docs/UPDATE_ITEM.md)
+- [`DELETE` Delete All Items](docs/DELETE_ALL_ITEMS.md)
+- [`DELETE` Delete Item](docs/DELETE_ITEM.md)
    
 ### Outstanding Items
 
