@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping(value = "/items")
 public class ItemController {
 
     private final ItemRepository repository;
@@ -16,28 +17,28 @@ public class ItemController {
         this.repository = repository;
     }
 
-    @GetMapping("/items")
+    @GetMapping
     public List<Item> retrieveAllItems() {
         return repository.findAll();
     }
 
-    @PostMapping("/items")
+    @PostMapping
     public void insertItems(@RequestBody List<Item> items) {
         repository.saveAll(items);
     }
 
-    @DeleteMapping("/items")
+    @DeleteMapping
     void deleteAllItems() {
         repository.deleteAll();
     }
 
-    @GetMapping("/items/{id}")
+    @GetMapping("/{id}")
     public Item retrieveItemById(@PathVariable Long id) {
         return repository.findById(id)
                 .orElseThrow(() -> new ItemNotFoundException(id));
     }
 
-    @PutMapping("/items/{id}")
+    @PutMapping("/{id}")
     public Item updateOrInsertItem(@PathVariable Long id, @RequestBody Item item) {
         return repository.findById(id).map(updateItem -> {
             updateItem.setName(item.getName());
@@ -45,7 +46,7 @@ public class ItemController {
         }).orElseThrow(() -> new ItemNotFoundException(id));
     }
 
-    @DeleteMapping("/items/{id}")
+    @DeleteMapping("/{id}")
     public void deleteItem(@PathVariable Long id) {
         repository.delete(retrieveItemById(id));
     }
