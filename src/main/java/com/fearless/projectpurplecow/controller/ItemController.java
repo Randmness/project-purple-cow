@@ -28,7 +28,7 @@ public class ItemController {
     }
 
     @DeleteMapping
-    void deleteAllItems() {
+    public void deleteAllItems() {
         repository.deleteAll();
     }
 

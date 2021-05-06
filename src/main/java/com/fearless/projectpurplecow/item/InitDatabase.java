@@ -12,8 +12,6 @@ public class InitDatabase {
 
     @Bean
     CommandLineRunner initializeDatabase(ItemRepository repository) {
-        return args -> {
-            LOG.info("Database started.");
-        };
+        return args -> LOG.info("Database started.");
     }
 }
